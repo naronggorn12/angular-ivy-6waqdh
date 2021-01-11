@@ -1,0 +1,27 @@
+
+  <nav class="navbar navbar-expand-md navbar-light bde-navbar">
+    <div class="container-fluid">
+      <button id="collapseBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleSideBar()" >
+        Toggle
+      </button>
+      <ng-container *ngIf="!isMenuSmall">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            Dashboard
+        </li>
+        <li class="nav-item pl30">
+            Voucher
+        </li>
+        </ul>
+      </ng-container>
+      <div class="mt-2 mt-md-0">
+        <i class="fa fa-user"></i>
+    </div>
+    </div>
+  </nav>
+  <div class="sidebar">
+      <ul>
+          <li>S-Dashboard</li>
+          <li>S-Voucher</li>
+      </ul>
+  </div>
